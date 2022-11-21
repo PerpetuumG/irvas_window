@@ -6,10 +6,11 @@ import tabs from './modules/tabs';
 import forms from './modules/forms';
 import changeModalState from './modules/changeModalState';
 import timer from './modules/timer';
+import images from './modules/images';
 
 addEventListener('DOMContentLoaded', () => {
   let modalState = {};
-  let deadline = '2022-12-01';
+  let deadline = '2022-12-18';
 
   changeModalState(modalState);
 
@@ -19,4 +20,5 @@ addEventListener('DOMContentLoaded', () => {
   tabs('.balcon_icons', '.balcon_icons_img', '.big_img > img', 'do_image_more', 'inline-block');
   forms(modalState);
   timer('.container1', deadline);
+  images();
 });
